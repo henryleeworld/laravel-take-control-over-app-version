@@ -1,4 +1,4 @@
-# Laravel 7 控制應用程式版本
+# Laravel 8 控制應用程式版本
 
 引入 pragmarx 的 version 套件來擴增應用程式版本，遵循一套語義化版本控制規範，一般主版本號遞增代表當做了不相容的修改，次版本號遞增代表當做了向下相容的功能性新增，修訂號遞增則當做了向下相容的問題修正。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/DPTMDYY.png)
+![](https://i.imgur.com/jcmmpXe.png)
 > 由左到右依序比較每個標識符號，第一個差異值用來決定優先層級
