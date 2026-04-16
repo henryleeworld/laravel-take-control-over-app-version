@@ -1,21 +1,22 @@
-mode: increment
+mode: 'absorb' # or 'increment'
 blade-directive: version
 current:
   label: v
   major: 1
   minor: 0
   patch: 0
-  prerelease: null
-  buildmetadata: null
+  prerelease:
+  buildmetadata:
   commit: 100001
   timestamp:
-    year: 2020
-    month: 11
-    day: 4
-    hour: 13
-    minute: 298
-    second: 47
-    timezone: UTC
+    mode: absorb
+    year:
+    month:
+    day:
+    hour:
+    minute:
+    second:
+    timezone:
 commit:
   mode: absorb
   length: 6

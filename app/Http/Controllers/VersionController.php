@@ -6,22 +6,12 @@ use PragmaRX\Version\Package\Facade as Version;
 
 class VersionController extends Controller
 {
-    private $version;
-
-    /**
-     * Instantiate a new UserController instance.
-     */
-    public function __construct(Version $version)
-    {
-        $this->version = $version;
-    }
-
     public function show()
     {
-        echo '版本：' . $this->version::version() . PHP_EOL;
-        echo '提交版本：' . $this->version::commit() . PHP_EOL;
-        echo '主版本號：' . $this->version::major() . PHP_EOL;
-        echo '次版本號：' . $this->version::minor() . PHP_EOL;
-        echo '修訂號：' . $this->version::patch() . PHP_EOL;
+        echo __('The version number is: ') . Version::version() . PHP_EOL;
+        echo __('The commit ID is: ') . Version::commit() . PHP_EOL;
+        echo __('The major version number is: ') . Version::major() . PHP_EOL;
+        echo __('The minor version number is: ') . Version::minor() . PHP_EOL;
+        echo __('The patch version number is: ') . Version::patch() . PHP_EOL;
     }
 }
